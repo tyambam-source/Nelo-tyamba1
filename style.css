@@ -28,6 +28,7 @@ body{
   background-repeat:  no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
  
 }
 body  * { 
@@ -36,7 +37,7 @@ body  * {
 }
 #container{
 width: 100%;
-max-width: 580px;
+max-width: 588px;
 margin: 56px auto 0;
 padding: 0 24px;
 }
@@ -143,4 +144,14 @@ footer{
 .footer-content{
   display: flex;
   justify-content: center;
+}
+@media (min-width: 768px){
+  :root{
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+    vilport: heitg 100%;
+
+  }
+  .light{
+     --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
